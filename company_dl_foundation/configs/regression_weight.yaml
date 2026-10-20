@@ -1,0 +1,24 @@
+task: regression
+target: berat_gram
+features:
+  numeric:
+    - diameter_cm
+    - rata_rata_merah_0_255
+    - rata_rata_hijau_0_255
+    - rata_rata_biru_0_255
+    - indikator_memar_0_1
+    - indikator_bintik_0_1
+    - hari_sejak_panen
+  categorical: [jenis_buah]
+
+model:
+  hidden_blocks:
+    - {units: 128, activation: relu, dropout: 0.2}
+    - {units: 64,  activation: relu, dropout: 0.2}
+    - {units: 32,  activation: relu, dropout: 0.1}
+  output_activation: linear
+  loss: mae
+  metrics: [mae]
+
+business_metric:
+  tolerance: 20.0     # ±20 gram dianggap akurat
