@@ -1,0 +1,28 @@
+project:
+  name: company_dl_foundation
+  seed: 42
+  log_level: INFO
+
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  artifacts: artifacts
+  models: artifacts/models
+  preprocessors: artifacts/preprocessors
+  logs: artifacts/logs
+
+training:
+  batch_size: 32
+  epochs: 60
+  learning_rate: 0.001
+  early_stopping_patience: 8
+  validation_split: 0.15
+  monitor_metric: val_loss
+
+pruning:
+  enabled: true
+  target_sparsity: 0.5      # 50% bobot di-nol-kan
+  schedule: polynomial      # polynomial | constant
+  begin_step: 0
+  end_step: 1000
+  finetune_epochs: 5
