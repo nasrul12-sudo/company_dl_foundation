@@ -3,29 +3,6 @@
         Modular Deep Learning Foundation for Enterprise Systems
 ================================================================================
 
-Versi    : 1.0.0
-Lisensi  : Internal / Proprietary
-Stack    : Python 3.10+, TensorFlow 2.13+, scikit-learn, FastAPI
-Author   : Tim Data Science & Engineering
-Terakhir diperbarui: 2024
-
---------------------------------------------------------------------------------
-DAFTAR ISI
---------------------------------------------------------------------------------
-1.  Ringkasan Proyek
-2.  Prinsip Desain
-3.  Arsitektur Sistem
-4.  Struktur Folder
-5.  Instalasi & Persiapan
-6.  Cara Menjalankan (Training, Pruning, Serving)
-7.  Alur Retraining Saat Data Bertambah
-8.  Integrasi ke Sistem Bisnis
-9.  Cara Update Kode (Versioning & Rollback)
-10. Konvensi Kode & Kontribusi
-11. Troubleshooting
-12. Roadmap
-13. Lisensi & Kontak
-
 ================================================================================
 1. RINGKASAN PROYEK
 ================================================================================
